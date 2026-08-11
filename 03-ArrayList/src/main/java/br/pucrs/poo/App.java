@@ -1,4 +1,4 @@
-package main.java.br.pucrs.poo;
+package br.pucrs.poo;
 
 import java.util.ArrayList;
 import java.util.Collections;
