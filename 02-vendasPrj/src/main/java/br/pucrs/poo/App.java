@@ -4,7 +4,8 @@ public class App {
 
     public static void main(String[] args) {
         // teste de criação de clientes
-        Cliente c1 = new Cliente(123, "Sr. Smith");
+        Cliente c1;
+        c1 = new Cliente(123, "Sr. Smith");
         Cliente c2 = new Cliente(321, "John Doe");
         System.out.println();
         System.out.println(c1.toString());
