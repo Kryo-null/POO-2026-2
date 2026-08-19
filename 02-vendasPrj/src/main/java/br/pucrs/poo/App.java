@@ -17,7 +17,7 @@ public class App {
         cadCli.inserir(c2);
         cadCli.inserir(127, "Tio Patinhas");
 
-        CadastroClientes outroCad = CadastroClientes.getInstance();
+        //CadastroClientes outroCad = CadastroClientes.getInstance();
         System.out.println(cadCli);
 
         CadastroProdutos cadProd = CadastroProdutos.getInstance();
