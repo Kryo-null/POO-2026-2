@@ -6,10 +6,19 @@ import java.util.ArrayList;
 public class Venda {
     private Cliente cliente;
     private ArrayList<ItemVenda> itens;
+    private int nroNF;
+
+    private static int proxNroNF = 1000;
 
     public Venda(Cliente cli) {
         this.cliente = cli;
         this.itens = new ArrayList<>();
+        Venda.proxNroNF = Venda.proxNroNF + 1;
+        this.nroNF = proxNroNF;
+    }
+
+    public static int getProxNF() {
+        return proxNroNF + 1;
     }
 
     public void inserir(Produto prod) {
@@ -23,7 +32,9 @@ public class Venda {
     public String getNotaFiscal() {
         double total = 0;
         StringBuilder nota = new StringBuilder("Exercício POO 2026/2\t");
-        nota.append(LocalDateTime.now().toLocalDate() + "\n");
+        nota.append(LocalDateTime.now().toLocalDate() + "\t");
+        nota.append("NF nro: " + this.nroNF + "\n");
+
         nota.append("Comprador: " + cliente.getNome());
         nota.append("\n- - - - - - - - - - - - - - - - - - - - - - -\n");
         // não devemos mais usar for tradicional...

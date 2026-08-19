@@ -16,9 +16,11 @@ public class CadastroClientes {
     private static CadastroClientes instance;
 
     public static CadastroClientes getInstance() {
-        if (instance == null)
+        if (instance == null) {
             instance = new CadastroClientes();
-
+            // aqui eu poderia chamar um método para popular o cadastro
+            // popular -> criar objetos, ler de arquivo ou buscar num BD
+        }
         return instance;
 
     }
@@ -42,21 +44,21 @@ public class CadastroClientes {
     }
 
     // public Cliente pesquisar(String cod) {
-    //     for (Cliente cli : lista) {
+    // for (Cliente cli : lista) {
 
-    //         // ruim!!!
-    //         // if (cli instanceof ClientePF) {
-    //         // ClientePF pf = (ClientePF)cli;
-    //         // if ( pf.getCPF().equals(cod) ) {
-    //         // //if ( ((ClientePF)cli).getCPF().equals(cod) ) {
-    //         // return cli;
-    //         // }
-    //         // }
-    //         if (cli.getID().equals(cod))
-    //             return cli;
+    // // ruim!!!
+    // // if (cli instanceof ClientePF) {
+    // // ClientePF pf = (ClientePF)cli;
+    // // if ( pf.getCPF().equals(cod) ) {
+    // // //if ( ((ClientePF)cli).getCPF().equals(cod) ) {
+    // // return cli;
+    // // }
+    // // }
+    // if (cli.getID().equals(cod))
+    // return cli;
 
-    //     }
-    //     return null;
+    // }
+    // return null;
     // }
 
     public String toString() {

@@ -17,6 +17,7 @@ public class App {
         cadCli.inserir(c2);
         cadCli.inserir(127, "Tio Patinhas");
 
+        CadastroClientes outroCad = CadastroClientes.getInstance();
         System.out.println(cadCli);
 
         CadastroProdutos cadProd = CadastroProdutos.getInstance();
@@ -73,8 +74,8 @@ public class App {
 
         System.out.println(v3.getNotaFiscal());
 
-        // System.out.println("\n\nPróxima venda será a de número: " +
-        // Venda.getProximaVenda());
+        System.out.println("\n\nPróxima venda será a de número: " +
+                Venda.getProxNF());
 
         // System.out.println("\n\n");
 
