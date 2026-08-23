@@ -3,9 +3,12 @@ package br.pucrs.poo;
 public class App {
 
     public static void main(String[] args) {
-         TerminalConsulta tc = new TerminalConsulta();
+        CadastroFuncionarios cadFunc = CadastroFuncionarios.getInstance();
+        System.out.println(cadFunc.RelatorioFuncionarios());
+
+        TerminalConsulta tc = new TerminalConsulta();
         tc.menu();
 
-        //new TerminalConsulta().menu();
+        // new TerminalConsulta().menu();
     }
 }

@@ -6,7 +6,7 @@ public class TerminalConsulta {
     private CadastroFuncionarios cadastro;
 
     public TerminalConsulta() {
-        cadastro = new CadastroFuncionarios();
+        cadastro = CadastroFuncionarios.getInstance();
     }
 
     public void menu() {
@@ -14,14 +14,14 @@ public class TerminalConsulta {
         while (true) {
             System.out.println("Entre a matricula do funcionario (0=fim): ");
             String matricula = s.nextLine();
-            if (matricula.equals("0")){
+            if (matricula.equals("0")) {
                 break; // Quebra o while
             }
             Funcionario func = cadastro.recuperaPorMatricula(matricula);
             System.out.println("----------");
             if (func == null) {
                 System.out.println("Funcionario nao encontrado !!");
-            }else{
+            } else {
                 System.out.println(func.toString());
             }
             System.out.println("Digite qualquer tecla para continuar.\n");
