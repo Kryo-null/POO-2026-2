@@ -5,11 +5,13 @@ public class Funcionario{
     private String matricula;
     private String nome;
     private double salarioBruto;
+    private int risco;
 
-    public Funcionario(String matricula, String nome, double salarioBruto){
+    public Funcionario(String matricula, String nome, double salarioBruto, int risco){
         this.matricula = matricula;
         this.nome = nome;
         this. salarioBruto = salarioBruto;
+        this.risco = risco;
     }
 
 	public String getMatricula() {
@@ -23,6 +25,10 @@ public class Funcionario{
 	public double getSalarioBruto() {
 		return salarioBruto;
 	}
+
+    public int getRisco() {
+        return risco;
+    }
 
     public double getINSS(){
         return salarioBruto*0.1;
@@ -39,7 +45,9 @@ public class Funcionario{
     }
 
     public double getSalarioLiquido(){
-        return salarioBruto - getINSS() - getImpRenda();
+        if(risco>=1){
+            return (salarioBruto * 1.25) - getINSS() - getImpRenda();
+        } else return salarioBruto - getINSS() - getImpRenda();
     }
 
     public String toString() {
