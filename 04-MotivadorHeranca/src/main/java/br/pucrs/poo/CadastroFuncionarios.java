@@ -42,11 +42,11 @@ public class CadastroFuncionarios {
     }
 
     private void carregaFuncionarios() {
-        funcionarios.add(new Funcionario("1001", "Huguinho Pato", 1890.0));
-        funcionarios.add(new Funcionario("1002", "Zezinho Pato", 3720.0));
-        funcionarios.add(new Funcionario("1003", "Luizinho Pato", 8940.0));
-        funcionarios.add(new Funcionario("1004", "Lala Pata", 4220.0));
-        funcionarios.add(new Funcionario("1005", "Lele Pata", 1283.0));
-        funcionarios.add(new Funcionario("1007", "Lili Pata", 12438.0));
+        funcionarios.add(new Funcionario("1001", "Huguinho Pato", 1890.0, 0));
+        funcionarios.add(new Funcionario("1002", "Zezinho Pato", 3720.0, 0));
+        funcionarios.add(new Funcionario("1003", "Luizinho Pato", 8940.0, 0));
+        funcionarios.add(new Funcionario("1004", "Lala Pata", 4220.0, 0));
+        funcionarios.add(new Funcionario("1005", "Lele Pata", 1283.0, 0));
+        funcionarios.add(new Funcionario("1007", "Lili Pata", 12438.0, 0));
     }
 }
