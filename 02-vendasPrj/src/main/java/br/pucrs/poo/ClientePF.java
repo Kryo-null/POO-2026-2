@@ -13,6 +13,11 @@ public String getCPF(){
     return cpf;
 }
 
+@Override
 public String toString(){
-    return super.getCodigo() + super.getNome() + cpf;
+    //ficou ruim
+    //return super.getCodigo() + super.getNome() + cpf;
+
+    //reutilizando o toString de Cliente.java
+    return super.toString() + " [cpf = " +cpf+ "]";
 }

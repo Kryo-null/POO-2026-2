@@ -1,6 +1,6 @@
 package br.pucrs.poo;
 
-public class Cliente {
+public abstract class Cliente {
     private int codigo;
     private String nome;
 

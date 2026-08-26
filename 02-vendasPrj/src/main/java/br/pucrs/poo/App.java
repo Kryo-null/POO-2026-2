@@ -5,8 +5,9 @@ public class App {
     public static void main(String[] args) {
         // teste de criação de clientes
         Cliente c1;
-        c1 = new Cliente(123, "Sr. Smith");
-        Cliente c2 = new Cliente(321, "John Doe");
+        c1 = new ClientePF(123, "Sr. Smith", "1.1-1");
+        Cliente c2 = new ClientePJ(321, "John Doe Inc", "102/0010-1");
+        Cliente c3 = new Estudante(777, "Desgraçinha", "2.2-2", "PUCRS");
         System.out.println();
         System.out.println(c1.toString());
         System.out.println("c2: " + c2.getCodigo() + " " + c2.getNome());
@@ -18,7 +19,11 @@ public class App {
         cadCli.inserir(127, "Tio Patinhas");
 
         ClientePF cliPF =  new ClientePF(200, "Sra. Smith", "1.1-1");
-        
+
+        System.out.println("pf nome: "+cliPF.getNome());
+        System.out.println("pf cpf: "+cliPF.getCPF());
+        System.out.println("pf toString: "+cliPF.toString());
+
         //CadastroClientes outroCad = CadastroClientes.getInstance();
         //System.out.println(cadCli);
 
@@ -27,7 +32,7 @@ public class App {
         // teste de criação de clientes
         Produto p1 = new Produto(1, "caneta azul", 2);
         Produto p2 = new Produto(2, "borracha", 1.5);
-        Produto p3 = new Produto(3, "lápis", 1);
+        //Produto p3 = new Produto(3, "lápis", 1);
         Produto p4 = new Produto(4, "Chocolate", 10);
 
         System.out.println(p1.toString());
