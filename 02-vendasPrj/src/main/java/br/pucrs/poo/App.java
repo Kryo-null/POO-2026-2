@@ -17,6 +17,8 @@ public class App {
         cadCli.inserir(c2);
         cadCli.inserir(127, "Tio Patinhas");
 
+        ClientePF cliPF =  new ClientePF(200, "Sra. Smith", "1.1-1");
+        
         //CadastroClientes outroCad = CadastroClientes.getInstance();
         //System.out.println(cadCli);
 
