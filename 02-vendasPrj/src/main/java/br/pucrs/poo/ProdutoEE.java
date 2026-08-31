@@ -12,9 +12,9 @@ public class ProdutoEE extends Produto {
 
     public String getGarantia() {  //fiz do jeito que consegui (n entendi direito como fazer da mlehor forma)
         String resultado;
-        resultado = "nome: " + super.getNome();
-        resultado += "garantia: " + garantia + " dias";
-        resultado += "data da compra: " + this.dataCompra;
+        resultado = "nome: " + super.getNome() + "\n";
+        resultado += "garantia: " + garantia + " dias\n";
+        resultado += "data da compra: " + this.dataCompra + "\n";
         resultado += "vencimento: " + dataCompra.plusDays(garantia);
         return resultado;
     }

@@ -96,5 +96,8 @@ public class App {
         // System.out.println("\n\n");
         // System.out.println(v1.getNotaFiscal());
 
+        ProdutoEE microfodase = new ProdutoEE(6677, "microndas", 10423.87, 90);
+
+        System.out.println(microfodase.getGarantia());
     }
 }
