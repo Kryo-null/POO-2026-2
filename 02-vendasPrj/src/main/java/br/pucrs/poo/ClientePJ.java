@@ -7,11 +7,12 @@ public class ClientePJ extends Cliente {
         super(umCodigo, umNome);
         this.cnpj = umCNPJ;
     }
-}
 
-public String getCNPJ() { return cnpj; }
 
-@Override
-public String toString(){
-    return super.toString() + " [cnpj = " +cnpj+ "]";
+    public String getCNPJ() { return cnpj; }
+
+    @Override
+    public String toString(){
+       return super.toString() + " [cnpj = " +cnpj+ "]";
+    }
 }

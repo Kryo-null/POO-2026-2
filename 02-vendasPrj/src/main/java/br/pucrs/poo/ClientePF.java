@@ -7,17 +7,17 @@ public class ClientePF extends Cliente {
         super(umCodigo, umNome);
         this.cpf = umCPF;
     }
-}
 
-public String getCPF(){
-    return cpf;
-}
+    public String getCPF(){
+        return cpf;
+    }
 
-@Override
-public String toString(){
-    //ficou ruim
-    //return super.getCodigo() + super.getNome() + cpf;
+    @Override
+    public String toString(){
+        //ficou ruim
+        //return super.getCodigo() + super.getNome() + cpf;
 
-    //reutilizando o toString de Cliente.java
-    return super.toString() + " [cpf = " +cpf+ "]";
+        //reutilizando o toString de Cliente.java
+        return super.toString() + " [cpf = " +cpf+ "]";
+    }
 }

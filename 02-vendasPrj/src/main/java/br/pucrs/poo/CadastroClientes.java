@@ -29,10 +29,9 @@ public class CadastroClientes {
         lista.add(cli);
     }
 
-    public void inserir(int umCod, String umNome) {
-        Cliente novo = new Cliente(umCod, umNome);
+    public void inserir(int umCod, String umNome, String umCPF) {
+        Cliente novo = new ClientePF(umCod, umNome, umCPF);
         lista.add(novo);
-        lista.add(new Cliente(umCod, umNome));
     }
 
     public Cliente pesquisar(int cod) {
