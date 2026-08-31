@@ -8,18 +8,22 @@ public class ClientePF extends Cliente {
     this.cpf = umCPF;
   }
 
+  @Override
+  public String getID(){
+    return this.cpf;
+  }
 
-  public String getCPF() { return cpf; }
+  public String getCPF() { return this.cpf; }
 
   @Override
   public String toString() {
     // ficou feio...
     //return super.getCodigo() + super.getNome() + "[cpf=" + cpf + "]";
-    
+
     // reutilizando o toString da Classe Cliente
-    return super.toString() + " [cpf = " + cpf + "]";
+    return super.toString() + " [cpf = " + this.cpf + "]";
   }
 
 
-  
+
 }

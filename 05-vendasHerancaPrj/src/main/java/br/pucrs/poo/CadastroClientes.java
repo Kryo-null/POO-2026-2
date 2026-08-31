@@ -43,6 +43,15 @@ public class CadastroClientes {
         return null;
     }
 
+    public Cliente pesquisar(String id) {
+        for(Cliente cli : lista) {
+            if(cli.getID().compareTo(id) == 0)
+                return cli;
+        }
+        return null;
+    }
+
+
     // public Cliente pesquisar(String cod) {
     // for (Cliente cli : lista) {
 
