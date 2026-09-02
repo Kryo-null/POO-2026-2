@@ -1,11 +1,10 @@
 package br.pucrs.poo;
 
 public class ProdutoAlco extends Produto{
-    private double taxa;
+    private static double taxa = 4.0;
 
     public ProdutoAlco(int umCodigo, String umNome, double umPreco, int umaTaxa){
         super(umCodigo, umNome, umPreco);
-        this.taxa = umaTaxa;
     }
 
     public double getTaxa(){
@@ -18,6 +17,7 @@ public class ProdutoAlco extends Produto{
 
     @Override
     public double getPreco(){
-        return super.getPreco() * (taxa/100);
+        double taxaAlco = super.getPreco() * taxa;
+        return super.getPreco() + taxaAlco;
     }
 }
